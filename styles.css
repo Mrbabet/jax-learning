@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html {
+    scroll-behavior: initial;
+  }
+}
+header .header-wrapper {
+  margin-block: 24px;
+  margin-inline: 32px;
+}
+header .header-wrapper .login {
+  display: flex;
+  flex-direction: row-reverse;
+}
+header .header-wrapper .login ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+header .header-top {
+  display: flex;
+  justify-content: center;
+}
+header .header-top .img {
+  justify-content: center;
+}
+header nav .main-nav {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+header nav .main-nav .main-category {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+header nav .main-nav .main-category .li-main-category:hover .nav001 {
+  display: block;
+  -webkit-animation: fade-in ease-in-out 300ms;
+          animation: fade-in ease-in-out 300ms;
+}
+header nav .main-nav .main-category .li-nav001:hover .nav002 {
+  display: block;
+  -webkit-animation: fade-in ease-in-out 300ms;
+          animation: fade-in ease-in-out 300ms;
+}
+header nav .main-nav .main-category .nav001 {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  background-color: rgb(179, 179, 179);
+  width: 200px;
+  color: white;
+}
+header nav .main-nav .main-category .nav002 {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  background-color: rgb(179, 179, 179);
+  z-index: 0;
+  top: 0;
+  translate: 200px;
+  width: 200px;
+  height: 100%;
+  color: white;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=styles.css.map */
