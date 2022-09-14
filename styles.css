@@ -77,6 +77,7 @@ header .header-wrapper .login ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+  cursor: pointer;
 }
 header .header-top {
   display: flex;
@@ -95,13 +96,17 @@ header nav .main-nav .main-category {
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 5rem;
   position: relative;
+}
+header nav .main-nav .main-category .li-main-category:hover {
+  cursor: pointer;
 }
 header nav .main-nav .main-category .li-main-category:hover .nav001 {
   display: block;
   -webkit-animation: fade-in ease-in-out 300ms;
           animation: fade-in ease-in-out 300ms;
+  cursor: pointer;
 }
 header nav .main-nav .main-category .li-nav001:hover .nav002 {
   display: block;

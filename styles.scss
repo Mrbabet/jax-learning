@@ -75,6 +75,7 @@ header {
         list-style: none;
         display: flex;
         gap: 1rem;
+        cursor: pointer;
       }
     }
   }
@@ -96,13 +97,15 @@ header {
         padding: 0;
         list-style: none;
         display: flex;
-        gap: 1rem;
+        gap: 5rem;
         position: relative;
 
         .li-main-category:hover {
+          cursor: pointer;
           .nav001 {
             display: block;
             animation: fade-in ease-in-out 300ms;
+            cursor: pointer;
           }
         }
 
