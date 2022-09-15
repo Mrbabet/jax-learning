@@ -12,16 +12,15 @@
   <body>
     <header>
       <div class="header-wrapper">
-        <div class="login">
-          <ul>
-            <li>Zaloguj się</li>
-            <li>Rejestracja</li>
-          </ul>
-        </div>
-
         <div class="header-top">
           <div class="img">
             <img src="https://www.jax.com.pl/images/logo.png" alt="" />
+          </div>
+          <div class="login">
+            <ul>
+              <li>Zaloguj się</li>
+              <li>Rejestracja</li>
+            </ul>
           </div>
         </div>
 
@@ -35,7 +34,25 @@
                     <li class="li-nav001">
                       Dla domu
                       <ul class="nav002">
-                        <li>Kuchnia</li>
+                        <li class="li-nav002">
+                          Kuchnia
+                          <ul class="nav003">
+                            <li class="li-nav003">
+                              Mycie
+                              <ul class="nav004">
+                                <li class="li-nav004">Mycie rąk</li>
+                                <li class="li-nav004">
+                                  Mycie blatów roboczych
+                                </li>
+                                <li class="li-nav004">Mycie naczyń</li>
+                                <li class="li-nav004">Mycie podłóg</li>
+                                <li class="li-nav004">Mycie urządzeń</li>
+                              </ul>
+                            </li>
+                            <li>Odkamienianie</li>
+                            <li>Dezynfekcja</li>
+                          </ul>
+                        </li>
                         <li>Łazienka</li>
                         <li>Salon</li>
                         <li>Pralnia</li>
@@ -119,5 +136,35 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="hero-wrapper"></div>
+      </section>
+
+      <section class="categories">
+        <div class="wrapper">
+          <div class="grid-container">
+            <div class="grid-box dla-domu"><h2>Dla domu</h2></div>
+            <div class="grid-box horeca"><h2>HoReCa</h2></div>
+            <div class="grid-box przemysł/agro"><h2>Przemysł/Agro</h2></div>
+            <div class="grid-box medycyna-laboratoria">
+              <h2>Medycyna i Laboratoria</h2>
+            </div>
+            <div class="grid-box placówki-edukacyjne">
+              <h2>Placówki edukacyjne</h2>
+            </div>
+            <div class="grid-box placówki-sportowe">
+              <h2>Placówki sportowe</h2>
+            </div>
+            <div class="grid-box auto"><h2>Auto</h2></div>
+            <div class="grid-box firmy-sprzątające">
+              <h2>Firmy sprzątające</h2>
+            </div>
+            <div class="grid-box-span-1"><h2>Nasze marki</h2></div>
+            <div class="grid-box-span-1"><h2>Sklep internetowy</h2></div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

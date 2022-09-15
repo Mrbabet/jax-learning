@@ -72,6 +72,8 @@ header .header-wrapper .login {
   flex-direction: row-reverse;
 }
 header .header-wrapper .login ul {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -79,15 +81,25 @@ header .header-wrapper .login ul {
   gap: 1rem;
   cursor: pointer;
 }
-header .header-top {
+header .header-wrapper .login ul li {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  background-color: rgb(185, 9, 9);
+  color: white;
+  border-radius: 99vh;
+}
+header .header-top {
+  display: flex;
+  justify-content: space-between;
 }
 header .header-top .img {
   justify-content: center;
 }
 header nav .main-nav {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -113,13 +125,23 @@ header nav .main-nav .main-category .li-nav001:hover .nav002 {
   -webkit-animation: fade-in ease-in-out 300ms;
           animation: fade-in ease-in-out 300ms;
 }
+header nav .main-nav .main-category .li-nav002:hover .nav003 {
+  display: block;
+  -webkit-animation: fade-in ease-in-out 300ms;
+          animation: fade-in ease-in-out 300ms;
+}
+header nav .main-nav .main-category .li-nav003:hover .nav004 {
+  display: block;
+  -webkit-animation: fade-in ease-in-out 300ms;
+          animation: fade-in ease-in-out 300ms;
+}
 header nav .main-nav .main-category .nav001 {
   display: none;
   margin: 0;
   padding: 0;
   list-style: none;
   position: absolute;
-  background-color: rgb(179, 179, 179);
+  background-color: rgb(104, 100, 100);
   width: 200px;
   color: white;
 }
@@ -129,7 +151,35 @@ header nav .main-nav .main-category .nav002 {
   padding: 0;
   list-style: none;
   position: absolute;
-  background-color: rgb(179, 179, 179);
+  background-color: rgb(104, 100, 100);
+  z-index: 0;
+  top: 0;
+  translate: 200px;
+  width: 200px;
+  height: 100%;
+  color: white;
+}
+header nav .main-nav .main-category .nav003 {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  background-color: rgb(104, 100, 100);
+  z-index: 0;
+  top: 0;
+  translate: 200px;
+  width: 200px;
+  height: 100%;
+  color: white;
+}
+header nav .main-nav .main-category .nav004 {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  background-color: rgb(104, 100, 100);
   z-index: 0;
   top: 0;
   translate: 200px;
@@ -160,4 +210,40 @@ header nav .main-nav .main-category .nav002 {
   100% {
     opacity: 1;
   }
+}
+.hero {
+  background-image: url(https://www.jax.com.pl/images/baner_podstrona.jpg);
+  width: 100%;
+  height: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.categories .wrapper {
+  margin-block: 24px;
+  margin-inline: 32px;
+}
+.categories .grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  gap: 1rem;
+}
+.categories .grid-container .grid-box {
+  grid-column: span 2;
+  padding: 24px 16px;
+  background-color: rgb(185, 9, 9);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.categories .grid-container .grid-box-span-1 {
+  -moz-column-span: 1;
+       column-span: 1;
+  padding: 24px 16px;
+  background-color: rgb(185, 9, 9);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }/*# sourceMappingURL=styles.css.map */
