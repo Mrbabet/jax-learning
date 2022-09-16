@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -63,6 +64,10 @@ select {
     scroll-behavior: initial;
   }
 }
+body {
+  overflow: hidden;
+}
+
 header .header-wrapper {
   margin-block: 24px;
   margin-inline: 32px;
@@ -214,7 +219,7 @@ header nav .main-nav .main-category .nav004 {
 .hero {
   background-image: url(https://www.jax.com.pl/images/baner_podstrona.jpg);
   width: 100%;
-  height: 20%;
+  height: 40%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -227,16 +232,23 @@ header nav .main-nav .main-category .nav004 {
 .categories .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 150px);
+  grid-template-rows: repeat(3, 200px);
   gap: 1rem;
 }
 .categories .grid-container .grid-box {
   grid-column: span 2;
   padding: 24px 16px;
-  background-color: rgb(185, 9, 9);
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-blend-mode: darken;
+  text-transform: uppercase;
 }
 .categories .grid-container .grid-box-span-1 {
   -moz-column-span: 1;
@@ -246,4 +258,70 @@ header nav .main-nav .main-category .nav004 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-blend-mode: darken;
+  text-transform: uppercase;
+}
+.categories .grid-container .auto {
+  background-image: url(/images/Auto.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.categories .grid-container .dla-domu {
+  background-image: url(/images/dla-domu.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.categories .grid-container .horeca {
+  background-image: url(/images/horeca.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.categories .grid-container .przemysł-agro {
+  background-image: url(/images/przemysł-agro.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.categories .grid-container .medycyna-laboratoria {
+  background-image: url(/images/lab.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.categories .grid-container .placówki-edukacyjne {
+  background-image: url(/images/school.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: top;
+}
+.categories .grid-container .placówki-sportowe {
+  background-image: url(/images/gym.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.categories .grid-container .firmy-sprzątające {
+  background-image: url(/images/cleaning-industry.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+
+.news .wrapper {
+  margin-block: 24px;
+  margin-inline: 32px;
+}
+.news .wrapper header h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.news .wrapper .article-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+.news .wrapper .article-container article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
