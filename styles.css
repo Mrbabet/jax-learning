@@ -307,8 +307,9 @@ header nav .main-nav .main-category .nav004 {
 }
 
 .news .wrapper {
-  margin-block: 24px;
+  margin-block: 64px;
   margin-inline: 32px;
+  background-color: rgb(202, 200, 200);
 }
 .news .wrapper header h3 {
   font-size: 40px;
