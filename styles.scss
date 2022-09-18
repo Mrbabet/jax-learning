@@ -303,7 +303,7 @@ header {
   .wrapper {
     margin-block: 64px;
     margin-inline: 32px;
-     background-color: rgb(202, 200, 200);
+    background-color: rgb(202, 200, 200);
     header {
       h3 {
         font-size: 40px;
@@ -315,7 +315,6 @@ header {
       display: flex;
       gap: 1rem;
       margin-top: 4rem;
-     
 
       article {
         display: flex;
@@ -323,5 +322,21 @@ header {
         text-align: center;
       }
     }
+  }
+}
+footer {
+  background-color: black;
+  color: white;
+  p {
+    margin: 0;
+  }
+  ul {
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
 }
