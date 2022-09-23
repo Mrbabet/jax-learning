@@ -324,6 +324,55 @@ header {
     }
   }
 }
+.product-presentation {
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-block: 64px;
+    margin-inline: 32px;
+    header {
+      h3 {
+        font-size: 56px;
+        font-weight: bold;
+        width: 540px;
+      }
+    }
+  }
+}
+.layer4 {
+  background-color: rgb(41, 38, 38);
+  .wrapper {
+    margin-top: 64px;
+    margin-inline: 32px;
+    padding-block: 48px;
+    text-align: center;
+    header {
+      padding-block: 48px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h4 {
+        font-size: 36px;
+        color: white;
+        font-weight: 400;
+      }
+    }
+    p {
+      color: white;
+      margin-bottom: 48px;
+    }
+    button {
+      height: 50px;
+      width: 200px;
+      background-color: rgb(185, 9, 9);
+      color: white;
+      border-radius: 99vh;
+      border: 0;
+      outline: 0;
+    }
+  }
+}
 .map {
   margin-block: 0;
   padding: 0;
