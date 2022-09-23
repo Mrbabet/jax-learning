@@ -306,10 +306,13 @@ header nav .main-nav .main-category .nav004 {
   background-position: center;
 }
 
+.news {
+  background-color: rgb(202, 200, 200);
+}
 .news .wrapper {
+  padding-block: 48px;
   margin-block: 64px;
   margin-inline: 32px;
-  background-color: rgb(202, 200, 200);
 }
 .news .wrapper header h3 {
   font-size: 40px;
@@ -379,13 +382,16 @@ header nav .main-nav .main-category .nav004 {
 }
 
 footer .wrapper {
-  padding-block: 128px;
+  padding-block: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 4rem;
   background-color: rgb(41, 38, 38);
   color: white;
 }
-footer .wrapper ul {
+footer .wrapper .nav-footer ul {
   padding-block: 32px;
   list-style: none;
   text-transform: uppercase;
@@ -395,9 +401,24 @@ footer .wrapper ul {
   gap: 2rem;
   margin-bottom: 2rem;
 }
+footer .wrapper .sc-footer {
+  display: flex;
+  gap: 1rem;
+}
+footer .wrapper .sc-footer .sc-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(185, 9, 9);
+}
 footer .copyright {
   background-color: rgb(185, 9, 9);
 }
 footer .copyright p {
   margin: 0;
+  color: white;
+}
+footer .copyright p a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=styles.css.map */
