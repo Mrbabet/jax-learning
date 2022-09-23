@@ -378,14 +378,15 @@ header nav .main-nav .main-category .nav004 {
   padding: 0;
 }
 
-footer {
-  background-color: black;
+footer .wrapper {
+  padding-block: 128px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(41, 38, 38);
   color: white;
 }
-footer p {
-  margin: 0;
-}
-footer ul {
+footer .wrapper ul {
+  padding-block: 32px;
   list-style: none;
   text-transform: uppercase;
   margin: 0;
@@ -393,4 +394,10 @@ footer ul {
   display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+footer .copyright {
+  background-color: rgb(185, 9, 9);
+}
+footer .copyright p {
+  margin: 0;
 }/*# sourceMappingURL=styles.css.map */

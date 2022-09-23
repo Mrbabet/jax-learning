@@ -378,18 +378,28 @@ header {
   padding: 0;
 }
 footer {
-  background-color: black;
-  color: white;
-  p {
-    margin: 0;
-  }
-  ul {
-    list-style: none;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
+  .wrapper {
+    padding-block: 128px;
     display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    justify-content: center;
+    background-color: rgb(41, 38, 38);
+    color: white;
+
+    ul {
+      padding-block: 32px;
+      list-style: none;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .copyright {
+    background-color: rgb(185, 9, 9);
+    p {
+      margin: 0;
+    }
   }
 }
