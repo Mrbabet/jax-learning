@@ -265,8 +265,7 @@ header nav .main-nav .main-category .nav004 {
   text-transform: uppercase;
 }
 .categories .grid-container .grid-box-span-1 {
-  -moz-column-span: 1;
-       column-span: 1;
+  grid-column: span 1;
   padding: 24px 16px;
   background-color: rgb(185, 9, 9);
   display: flex;
@@ -284,50 +283,111 @@ header nav .main-nav .main-category .nav004 {
   background-image: url(/images/Auto.webp);
   background-color: rgba(0, 0, 0, 0.5);
 }
+.categories .grid-container .auto:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+  cursor: pointer;
+}
 .categories .grid-container .dla-domu {
   background-image: url(/images/dla-domu.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
+}
+.categories .grid-container .dla-domu:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+  cursor: pointer;
 }
 .categories .grid-container .horeca {
   background-image: url(/images/horeca.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
+.categories .grid-container .horeca:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 300ms;
+}
 .categories .grid-container .przemysł-agro {
   background-image: url(/images/przemysł-agro.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
+}
+.categories .grid-container .przemysł-agro:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+  cursor: pointer;
 }
 .categories .grid-container .medycyna-laboratoria {
   background-image: url(/images/lab.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
+.categories .grid-container .medycyna-laboratoria:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+  cursor: pointer;
+}
 .categories .grid-container .placówki-edukacyjne {
   background-image: url(/images/school.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: top;
+}
+.categories .grid-container .placówki-edukacyjne:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+  cursor: pointer;
 }
 .categories .grid-container .placówki-sportowe {
   background-image: url(/images/gym.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
+.categories .grid-container .placówki-sportowe:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+  cursor: pointer;
+}
+.categories .grid-container .placówki-edukacyjne:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+  cursor: pointer;
+}
 .categories .grid-container .firmy-sprzątające {
   background-image: url(/images/cleaning-industry.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
+.categories .grid-container .firmy-sprzątające:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+  cursor: pointer;
+}
 .categories .grid-container .nasze-marki {
   background-image: url(/images/Nasze\ Marki.png);
   background-color: rgba(0, 0, 0, 0.5);
 }
+.categories .grid-container .nasze-marki:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 300ms;
+}
 .categories .grid-container .sklep-internetowy {
-  background-image: url(/images/shopping-cart.png);
-  background-size: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(146, 8, 8);
-  background-position: top;
+}
+.categories .grid-container .sklep-internetowy svg {
+  width: 150px;
+  height: 150px;
+}
+.categories .grid-container .sklep-internetowy:hover {
+  transition: 300ms;
+  color: black;
+  background-color: white;
+  cursor: pointer;
 }
 
 .news {
