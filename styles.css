@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext);
 *,
 *::before,
 *::after {
@@ -66,6 +67,7 @@ select {
 }
 body {
   overflow: hidden;
+  font-family: "Lato", sans-serif;
 }
 
 header .header-wrapper {
@@ -217,7 +219,7 @@ header nav .main-nav .main-category .nav004 {
   }
 }
 .hero {
-  background-image: url(https://www.jax.com.pl/images/baner_podstrona.jpg);
+  background-image: url(/images/baner_podstrona.jpg);
   width: 100%;
   height: 40%;
   background-repeat: no-repeat;
@@ -307,7 +309,7 @@ header nav .main-nav .main-category .nav004 {
 }
 
 .news {
-  background-color: rgb(202, 200, 200);
+  background-color: rgb(41, 38, 38);
 }
 .news .wrapper {
   padding-block: 48px;
@@ -318,6 +320,8 @@ header nav .main-nav .main-category .nav004 {
   font-size: 40px;
   text-transform: uppercase;
   text-align: center;
+  color: rgb(177, 174, 174);
+  color: white;
 }
 .news .wrapper .article-container {
   display: flex;
@@ -328,6 +332,11 @@ header nav .main-nav .main-category .nav004 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: rgb(177, 174, 174);
+  color: white;
+}
+.news .wrapper .article-container article .date {
+  color: rgb(185, 9, 9);
 }
 
 .product-presentation .wrapper {
@@ -340,6 +349,13 @@ header nav .main-nav .main-category .nav004 {
   font-size: 56px;
   font-weight: bold;
   width: 540px;
+}
+
+.product-presentation::before {
+  content: "";
+  background-image: url(/images/symbol_bg2.png);
+  width: 100%;
+  height: 100%;
 }
 
 .layer4 {
