@@ -148,7 +148,7 @@ header nav .main-nav .main-category .nav001 {
   padding: 0;
   list-style: none;
   position: absolute;
-  background-color: rgb(104, 100, 100);
+  background-color: rgb(41, 38, 38);
   width: 200px;
   color: white;
 }
@@ -158,7 +158,7 @@ header nav .main-nav .main-category .nav002 {
   padding: 0;
   list-style: none;
   position: absolute;
-  background-color: rgb(104, 100, 100);
+  background-color: rgb(41, 38, 38);
   z-index: 0;
   top: 0;
   translate: 200px;
@@ -172,7 +172,7 @@ header nav .main-nav .main-category .nav003 {
   padding: 0;
   list-style: none;
   position: absolute;
-  background-color: rgb(104, 100, 100);
+  background-color: rgb(41, 38, 38);
   z-index: 0;
   top: 0;
   translate: 200px;
@@ -186,7 +186,7 @@ header nav .main-nav .main-category .nav004 {
   padding: 0;
   list-style: none;
   position: absolute;
-  background-color: rgb(104, 100, 100);
+  background-color: rgb(41, 38, 38);
   z-index: 0;
   top: 0;
   translate: 200px;
@@ -426,9 +426,21 @@ footer .wrapper .sc-footer .sc-icon {
   height: 50px;
   border-radius: 50%;
   background-color: rgb(185, 9, 9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .wrapper .sc-footer .sc-icon img {
+  width: 30px;
+  height: 30px;
 }
 footer .copyright {
-  background-color: rgb(185, 9, 9);
+  background-color: rgb(85, 85, 85);
+}
+footer .copyright .wrapper {
+  margin-inline: 32px;
+  padding-block: 48px;
+  background-color: rgb(85, 85, 85);
 }
 footer .copyright p {
   margin: 0;
