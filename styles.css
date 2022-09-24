@@ -94,9 +94,21 @@ header .header-wrapper .login ul li {
   align-items: center;
   height: 50px;
   width: 150px;
+  border-radius: 99vh;
+}
+header .header-wrapper .login ul li button {
+  width: 100%;
+  height: 100%;
+  border-radius: 99vh;
   background-color: rgb(185, 9, 9);
   color: white;
-  border-radius: 99vh;
+  border: 0;
+  outline: 0;
+}
+header .header-wrapper .login ul li button:hover {
+  background-color: rgba(185, 9, 9, 0.5);
+  cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 header .header-top {
   display: flex;
@@ -117,6 +129,7 @@ header nav .main-nav .main-category {
   display: flex;
   gap: 5rem;
   position: relative;
+  font-size: 20px;
 }
 header nav .main-nav .main-category .li-main-category:hover {
   cursor: pointer;
@@ -219,7 +232,6 @@ header nav .main-nav .main-category .nav004 {
   }
 }
 .hero {
-  background-image: url(/images/baner_podstrona.jpg);
   width: 100%;
   height: 40%;
   background-repeat: no-repeat;
@@ -307,6 +319,16 @@ header nav .main-nav .main-category .nav004 {
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
+.categories .grid-container .nasze-marki {
+  background-image: url(/images/Nasze\ Marki.png);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.categories .grid-container .sklep-internetowy {
+  background-image: url(/images/shopping-cart.png);
+  background-size: 50%;
+  background-color: rgb(146, 8, 8);
+  background-position: top;
+}
 
 .news {
   background-color: rgb(41, 38, 38);
@@ -391,6 +413,11 @@ header nav .main-nav .main-category .nav004 {
   border: 0;
   outline: 0;
 }
+.layer4 .wrapper button:hover {
+  background-color: rgba(185, 9, 9, 0.5);
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
 
 .map {
   margin-block: 0;
@@ -434,6 +461,11 @@ footer .wrapper .sc-footer .sc-icon img {
   width: 30px;
   height: 30px;
 }
+footer .wrapper .sc-footer .sc-icon:hover {
+  background-color: rgba(185, 9, 9, 0.5);
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
 footer .copyright {
   background-color: rgb(85, 85, 85);
 }
@@ -449,4 +481,9 @@ footer .copyright p {
 footer .copyright p a {
   text-decoration: none;
   color: black;
+}
+
+button:hover {
+  background-color: rgba(73, 79, 131, 0.5);
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
