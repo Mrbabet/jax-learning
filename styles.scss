@@ -485,6 +485,45 @@ header {
   margin-block: 0;
   padding: 0;
 }
+.newsletter {
+  .wrapper {
+    margin-block: 64px;
+    margin-inline: 32px;
+    padding-block: 48px;
+    text-align: center;
+
+    input {
+      width: 500px;
+      height: 50px;
+      border: 0;
+      outline: 0;
+      background-color: rgb(85, 85, 85);
+      padding-left: 16px;
+      color: white;
+    }
+    input::placeholder {
+      color: white;
+    }
+    button {
+      height: 50px;
+      width: 200px;
+      background-color: rgb(185, 9, 9);
+      color: white;
+      border-radius: 99vh;
+      border: 0;
+      outline: 0;
+    }
+    header {
+      margin-bottom: 64px;
+      h4 {
+        font-size: 36px;
+      }
+      p {
+        color: rgb(185, 9, 9);
+      }
+    }
+  }
+}
 footer {
   .wrapper {
     padding-block: 100px;

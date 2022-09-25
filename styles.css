@@ -484,6 +484,49 @@ header nav .main-nav .main-category .nav004 {
   padding: 0;
 }
 
+.newsletter .wrapper {
+  margin-block: 64px;
+  margin-inline: 32px;
+  padding-block: 48px;
+  text-align: center;
+}
+.newsletter .wrapper input {
+  width: 500px;
+  height: 50px;
+  border: 0;
+  outline: 0;
+  background-color: rgb(85, 85, 85);
+  padding-left: 16px;
+  color: white;
+}
+.newsletter .wrapper input::-moz-placeholder {
+  color: white;
+}
+.newsletter .wrapper input:-ms-input-placeholder {
+  color: white;
+}
+.newsletter .wrapper input::placeholder {
+  color: white;
+}
+.newsletter .wrapper button {
+  height: 50px;
+  width: 200px;
+  background-color: rgb(185, 9, 9);
+  color: white;
+  border-radius: 99vh;
+  border: 0;
+  outline: 0;
+}
+.newsletter .wrapper header {
+  margin-bottom: 64px;
+}
+.newsletter .wrapper header h4 {
+  font-size: 36px;
+}
+.newsletter .wrapper header p {
+  color: rgb(185, 9, 9);
+}
+
 footer .wrapper {
   padding-block: 100px;
   display: flex;
