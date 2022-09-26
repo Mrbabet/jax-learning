@@ -140,17 +140,52 @@ header nav .main-nav .main-category .li-main-category:hover .nav001 {
           animation: fade-in ease-in-out 300ms;
   cursor: pointer;
 }
+header nav .main-nav .main-category .li-nav001:hover {
+  -webkit-animation: fade-in ease-in 200ms;
+          animation: fade-in ease-in 200ms;
+  background-color: rgb(85, 85, 85);
+}
 header nav .main-nav .main-category .li-nav001:hover .nav002 {
   display: block;
   -webkit-animation: fade-in ease-in-out 300ms;
           animation: fade-in ease-in-out 300ms;
+}
+header nav .main-nav .main-category .li-nav002:hover {
+  -webkit-animation: fade-in ease-in 200ms;
+          animation: fade-in ease-in 200ms;
+  background-color: rgb(85, 85, 85);
 }
 header nav .main-nav .main-category .li-nav002:hover .nav003 {
   display: block;
   -webkit-animation: fade-in ease-in-out 300ms;
           animation: fade-in ease-in-out 300ms;
 }
+header nav .main-nav .main-category .li-nav003:hover {
+  -webkit-animation: fade-in ease-in 200ms;
+          animation: fade-in ease-in 200ms;
+  background-color: rgb(85, 85, 85);
+}
 header nav .main-nav .main-category .li-nav003:hover .nav004 {
+  display: block;
+  -webkit-animation: fade-in ease-in-out 300ms;
+          animation: fade-in ease-in-out 300ms;
+}
+header nav .main-nav .main-category .li-nav004:hover {
+  -webkit-animation: fade-in ease-in 200ms;
+          animation: fade-in ease-in 200ms;
+  background-color: rgb(85, 85, 85);
+}
+header nav .main-nav .main-category .li-nav004:hover .nav005 {
+  display: block;
+  -webkit-animation: fade-in ease-in 300ms;
+          animation: fade-in ease-in 300ms;
+}
+header nav .main-nav .main-category .li-nav005:hover {
+  background-color: rgb(85, 85, 85);
+  -webkit-animation: fade-in ease-in 200ms;
+          animation: fade-in ease-in 200ms;
+}
+header nav .main-nav .main-category .li-nav005:hover .nav006 {
   display: block;
   -webkit-animation: fade-in ease-in-out 300ms;
           animation: fade-in ease-in-out 300ms;
@@ -194,6 +229,20 @@ header nav .main-nav .main-category .nav003 {
   color: white;
 }
 header nav .main-nav .main-category .nav004 {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  background-color: rgb(41, 38, 38);
+  z-index: 0;
+  top: 0;
+  translate: 200px;
+  width: 200px;
+  height: 100%;
+  color: white;
+}
+header nav .main-nav .main-category .nav005 {
   display: none;
   margin: 0;
   padding: 0;
