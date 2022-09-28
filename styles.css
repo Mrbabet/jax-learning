@@ -329,7 +329,7 @@ header nav .main-nav .main-category .nav005 {
   text-transform: uppercase;
 }
 .categories .grid-container .auto {
-  background-image: url(/images/Auto.webp);
+  background-image: url(/images/Auto-test.webp);
   background-color: rgba(0, 0, 0, 0.5);
 }
 .categories .grid-container .auto:hover {
@@ -338,7 +338,7 @@ header nav .main-nav .main-category .nav005 {
   cursor: pointer;
 }
 .categories .grid-container .dla-domu {
-  background-image: url(/images/dla-domu.webp);
+  background-image: url(/images/dla-domu-test.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
@@ -348,7 +348,7 @@ header nav .main-nav .main-category .nav005 {
   cursor: pointer;
 }
 .categories .grid-container .horeca {
-  background-image: url(/images/horeca.webp);
+  background-image: url(/images/horeca-test.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
@@ -358,7 +358,7 @@ header nav .main-nav .main-category .nav005 {
   transition: 300ms;
 }
 .categories .grid-container .przemysł-agro {
-  background-image: url(/images/przemysł-agro.webp);
+  background-image: url(/images/przemysł-agro-test.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
@@ -368,7 +368,7 @@ header nav .main-nav .main-category .nav005 {
   cursor: pointer;
 }
 .categories .grid-container .medycyna-laboratoria {
-  background-image: url(/images/lab.webp);
+  background-image: url(/images/lab-test.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
@@ -378,7 +378,7 @@ header nav .main-nav .main-category .nav005 {
   cursor: pointer;
 }
 .categories .grid-container .placówki-edukacyjne {
-  background-image: url(/images/school.webp);
+  background-image: url(/images/school-test.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: top;
 }
@@ -388,7 +388,7 @@ header nav .main-nav .main-category .nav005 {
   cursor: pointer;
 }
 .categories .grid-container .placówki-sportowe {
-  background-image: url(/images/gym.webp);
+  background-image: url(/images/gym-test.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
@@ -403,7 +403,7 @@ header nav .main-nav .main-category .nav005 {
   cursor: pointer;
 }
 .categories .grid-container .firmy-sprzątające {
-  background-image: url(/images/cleaning-industry.webp);
+  background-image: url(/images/cleaning-industry-test_1.webp);
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
 }
