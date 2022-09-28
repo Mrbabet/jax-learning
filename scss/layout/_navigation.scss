@@ -1,4 +1,8 @@
 nav {
+  .nav-wrapper {
+    margin-block: 24px;
+    margin-inline: 32px;
+  }
   .main-nav {
     margin-top: 2rem;
     display: flex;
@@ -9,7 +13,7 @@ nav {
       padding: 0;
       list-style: none;
       display: flex;
-      gap: 5rem;
+      gap: 2rem;
       position: relative;
       font-size: 20px;
 
