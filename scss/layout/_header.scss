@@ -1,14 +1,15 @@
 header {
-  .header-top {
-    display: flex;
-    justify-content: space-between;
-    .img {
-      justify-content: center;
-    }
-  }
   .header-wrapper {
     margin-block: 24px;
     margin-inline: 32px;
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+
+      .img {
+        width: 203px;
+      }
+    }
     .login {
       display: flex;
       flex-direction: row-reverse;
