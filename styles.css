@@ -68,6 +68,7 @@ select {
 body {
   overflow: hidden;
   font-family: "Lato", sans-serif;
+  font-display: swap;
 }
 
 header .header-wrapper {
