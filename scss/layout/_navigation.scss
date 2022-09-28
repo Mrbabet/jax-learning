@@ -1,0 +1,134 @@
+nav {
+  .main-nav {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    .main-category {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 5rem;
+      position: relative;
+      font-size: 20px;
+
+      .li-main-category:hover {
+        cursor: pointer;
+        .nav001 {
+          display: block;
+          animation: fade-in ease-in-out 300ms;
+          cursor: pointer;
+        }
+      }
+
+      .li-nav001:hover {
+        animation: fade-in ease-in 200ms;
+        background-color: rgb(85, 85, 85);
+        .nav002 {
+          display: block;
+          animation: fade-in ease-in-out 300ms;
+        }
+      }
+      .li-nav002:hover {
+        animation: fade-in ease-in 200ms;
+        background-color: rgb(85, 85, 85);
+        .nav003 {
+          display: block;
+          animation: fade-in ease-in-out 300ms;
+        }
+      }
+      .li-nav003:hover {
+        animation: fade-in ease-in 200ms;
+        background-color: rgb(85, 85, 85);
+        .nav004 {
+          display: block;
+          animation: fade-in ease-in-out 300ms;
+        }
+      }
+      .li-nav004:hover {
+        animation: fade-in ease-in 200ms;
+        background-color: rgb(85, 85, 85);
+        .nav005 {
+          display: block;
+          animation: fade-in ease-in 300ms;
+        }
+      }
+      .li-nav005:hover {
+        background-color: rgb(85, 85, 85);
+        animation: fade-in ease-in 200ms;
+        .nav006 {
+          display: block;
+          animation: fade-in ease-in-out 300ms;
+        }
+      }
+
+      .nav001 {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        background-color: rgb(41, 38, 38);
+        width: 200px;
+        color: white;
+      }
+      .nav002 {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        background-color: rgb(41, 38, 38);
+        z-index: 0;
+        top: 0;
+        translate: 200px;
+        width: 200px;
+        height: 100%;
+        color: white;
+      }
+      .nav003 {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        background-color: rgb(41, 38, 38);
+        z-index: 0;
+        top: 0;
+        translate: 200px;
+        width: 200px;
+        height: 100%;
+        color: white;
+      }
+      .nav004 {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        background-color: rgb(41, 38, 38);
+        z-index: 0;
+        top: 0;
+        translate: 200px;
+        width: 200px;
+        height: 100%;
+        color: white;
+      }
+      .nav005 {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        background-color: rgb(41, 38, 38);
+        z-index: 0;
+        top: 0;
+        translate: 200px;
+        width: 200px;
+        height: 100%;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+@use "../globals" as g;
+
+.hero {
+  width: 100%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.categories {
+  .wrapper {
+    margin-block: 24px;
+    margin-inline: 32px;
+  }
+  .grid-container {
+    .auto {
+      background-image: url(/images/Auto-test.webp);
+      background-color: g.$colormask;
+    }
+    .auto:hover {
+      background-color: g.$colormaskhover;
+      transition: 300ms;
+      cursor: pointer;
+    }
+    .dla-domu {
+      background-image: url(/images/dla-domu-test.webp);
+      background-color: g.$colormask;
+      background-position: center;
+    }
+    .dla-domu:hover {
+      background-color: g.$colormaskhover;
+      transition: 300ms;
+      cursor: pointer;
+    }
+    .horeca {
+      background-image: url(/images/horeca-test.webp);
+      background-color: g.$colormask;
+      background-position: center;
+    }
+    .horeca:hover {
+      background-color: g.$colormaskhover;
+      cursor: pointer;
+      transition: 300ms;
+    }
+    .przemysł-agro {
+      background-image: url(/images/przemysł-agro-test.webp);
+      background-color: g.$colormask;
+      background-position: center;
+    }
+    .przemysł-agro:hover {
+      background-color: g.$colormaskhover;
+      transition: 300ms;
+      cursor: pointer;
+    }
+    .medycyna-laboratoria {
+      background-image: url(/images/lab-test.webp);
+      background-color: g.$colormask;
+      background-position: center;
+    }
+    .medycyna-laboratoria:hover {
+      background-color: g.$colormaskhover;
+      transition: 300ms;
+      cursor: pointer;
+    }
+    .placówki-edukacyjne {
+      background-image: url(/images/school-test.webp);
+      background-color: g.$colormask;
+      background-position: top;
+    }
+    .placówki-edukacyjne:hover {
+      background-color: g.$colormaskhover;
+      transition: 300ms;
+      cursor: pointer;
+    }
+    .placówki-sportowe {
+      background-image: url(/images/gym-test.webp);
+      background-color: g.$colormask;
+      background-position: center;
+    }
+    .placówki-sportowe:hover {
+      background-color: g.$colormaskhover;
+      transition: 300ms;
+      cursor: pointer;
+    }
+    .placówki-edukacyjne:hover {
+      background-color: g.$colormaskhover;
+      transition: 300ms;
+      cursor: pointer;
+    }
+    .firmy-sprzątające {
+      background-image: url(/images/cleaning-industry-test_1.webp);
+      background-color: g.$colormask;
+      background-position: center;
+    }
+    .firmy-sprzątające:hover {
+      background-color: g.$colormaskhover;
+      transition: 300ms;
+      cursor: pointer;
+    }
+    .nasze-marki {
+      background-image: url(/images/Nasze\ Marki.png);
+      background-color: g.$colormask;
+    }
+    .nasze-marki:hover {
+      background-color: g.$colormaskhover;
+      cursor: pointer;
+      transition: 300ms;
+    }
+    .sklep-internetowy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: g.$background-grid;
+      svg {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .sklep-internetowy:hover {
+      transition: 300ms;
+      color: black;
+      background-color: g.$white;
+      cursor: pointer;
+    }
+  }
+}
+
+.news {
+  background-color: g.$section_background_primary;
+  .wrapper {
+    padding-block: 48px;
+    margin-block: 64px;
+    margin-inline: 32px;
+
+    header {
+      h3 {
+        font-size: g.$big-font;
+        text-transform: uppercase;
+        text-align: center;
+        color: g.$white;
+      }
+    }
+    .article-container {
+      display: flex;
+      gap: 1rem;
+      margin-top: 4rem;
+
+      article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(177, 174, 174);
+        color: g.$white;
+        .date {
+          color: g.$paragraph_text_secondary;
+        }
+
+        h4 {
+          font-size: g.$small-font;
+        }
+      }
+    }
+  }
+}
+.product-presentation {
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-block: 64px;
+    margin-inline: 32px;
+    header {
+      h3 {
+        font-size: g.$vbig-font;
+        font-weight: bold;
+        width: 540px;
+      }
+    }
+  }
+}
+.product-presentation::before {
+  content: "";
+  background-image: url(/images/symbol_bg2.png);
+  width: 100%;
+  height: 100%;
+}
+.layer4 {
+  background-color: g.$section_background_primary;
+  .wrapper {
+    margin-top: 64px;
+    margin-inline: 32px;
+    padding-block: 48px;
+    text-align: center;
+    header {
+      padding-block: 48px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h4 {
+        font-size: g.$big-font;
+        color: g.$white;
+        font-weight: 400;
+      }
+    }
+    p {
+      color: g.$white;
+      font-size: g.$vsmall-font;
+      margin-bottom: 48px;
+    }
+    button {
+      height: 50px;
+      width: 200px;
+      background-color: g.$button_bg_color;
+      color: g.$white;
+      border-radius: 99vh;
+      border: 0;
+      outline: 0;
+    }
+    button:hover {
+      background-color: g.$button_hover;
+      cursor: pointer;
+      transition: 300ms ease-in-out;
+    }
+  }
+}
+.newsletter {
+  .wrapper {
+    margin-block: 64px;
+    margin-inline: 32px;
+    padding-block: 48px;
+    text-align: center;
+
+    input {
+      width: 500px;
+      height: 50px;
+      border: 0;
+      outline: 0;
+      background-color: g.$text-input-color;
+      padding-left: 16px;
+      color: white;
+    }
+    input::placeholder {
+      color: white;
+    }
+    button {
+      height: 50px;
+      width: 200px;
+      background-color: g.$button_bg_color;
+      color: g.$white;
+      border-radius: 99vh;
+      border: 0;
+      outline: 0;
+    }
+    button:hover {
+      background-color: g.$button_hover;
+      cursor: pointer;
+      transition: 300ms ease-in-out;
+    }
+    header {
+      margin-bottom: 64px;
+      h4 {
+        font-size: g.$big-font;
+      }
+      p {
+        color: g.$paragraph_text_secondary;
+        font-size: g.$vsmall-font;
+      }
+    }
+  }
+}

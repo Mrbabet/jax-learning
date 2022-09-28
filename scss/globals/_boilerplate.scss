@@ -1,0 +1,7 @@
+@use "../util" as u;
+
+body {
+  overflow: hidden;
+  font-family: u.$font;
+  font-display: swap;
+}

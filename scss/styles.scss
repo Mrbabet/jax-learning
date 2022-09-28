@@ -1,0 +1,21 @@
+@forward "./globals";
+@forward "./layout";
+@forward "./pages";
+@forward "./util";
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button:hover {
+  background-color: rgba(73, 79, 131, 0.5);
+  cursor: pointer;
+}
