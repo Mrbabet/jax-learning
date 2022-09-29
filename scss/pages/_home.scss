@@ -102,6 +102,7 @@
     .nasze-marki {
       background-image: url(/images/Nasze\ Marki.png);
       background-color: g.$colormask;
+      background-size: cover;
     }
     .nasze-marki:hover {
       background-color: g.$colormaskhover;

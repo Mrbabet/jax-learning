@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 200px);
   gap: 1rem;
   .grid-box {
     grid-column: span 2;
@@ -32,5 +32,30 @@
     color: white;
     background-blend-mode: darken;
     text-transform: uppercase;
+  }
+}
+@media (min-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 200px);
+    .grid-box {
+      grid-column: span 1;
+    }
+
+    .grid-box-span-1 {
+      grid-column: 0;
+      grid-row: span 0;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    .grid-box {
+      grid-column: span 2;
+    }
   }
 }

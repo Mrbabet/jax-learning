@@ -5,14 +5,13 @@ header {
     .header-top {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
-      .img {
-        width: 203px;
-      }
+      gap: 2rem;
     }
     .login {
-      display: flex;
-      flex-direction: row-reverse;
+      display: none;
+
       ul {
         display: flex;
         align-items: center;
@@ -45,6 +44,25 @@ header {
             transition: 300ms ease-in-out;
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    .header-wrapper {
+      margin-block: 24px;
+      margin-inline: 32px;
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0;
+      }
+      .login {
+        display: flex;
+        flex-direction: row-reverse;
       }
     }
   }
