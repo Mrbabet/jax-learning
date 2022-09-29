@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(100px, 1fr);
   grid-template-rows: repeat(9, 200px);
   gap: 1rem;
   .grid-box {
@@ -20,7 +20,7 @@
   }
 
   .grid-box-span-1 {
-    grid-column: span 1;
+    grid-column: span 2;
     padding: 24px 16px;
     display: flex;
     justify-content: flex-start;
@@ -44,8 +44,7 @@
     }
 
     .grid-box-span-1 {
-      grid-column: 0;
-      grid-row: span 0;
+      grid-column: span 1;
     }
   }
 }
@@ -53,9 +52,12 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(4, 200px);
     .grid-box {
       grid-column: span 2;
+    }
+    .grid-box-span-1 {
+      grid-column: span 1;
     }
   }
 }

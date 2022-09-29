@@ -1,148 +1,67 @@
+body.active {
+  overflow-y: hidden;
+  height: 100vh;
+}
 nav {
-  .nav-wrapper {
-    margin-block: 24px;
-    margin-inline: 32px;
-  }
   .main-nav {
-    margin-top: 2rem;
     display: none;
+  }
+  .main-nav.active {
+    margin: 0;
+    display: flex;
     justify-content: center;
+    position: absolute;
+    color: white;
+    background-color: rgb(85, 85, 85);
+    right: 0;
+    top: 0;
+    animation: show 300ms;
+    height: 100vh;
+    width: 80%;
 
     .main-category {
-      margin: 0;
+      margin-top: 200px;
+      text-transform: uppercase;
       padding: 0;
       list-style: none;
       display: flex;
+      flex-direction: column;
       gap: 2rem;
       position: relative;
       font-size: 20px;
-
-      .li-main-category:hover {
-        cursor: pointer;
-        .nav001 {
-          display: block;
-          animation: fade-in ease-in-out 300ms;
-          cursor: pointer;
-        }
-      }
-
-      .li-nav001:hover {
-        animation: fade-in ease-in 200ms;
-        background-color: rgb(85, 85, 85);
-        .nav002 {
-          display: block;
-          animation: fade-in ease-in-out 300ms;
-        }
-      }
-      .li-nav002:hover {
-        animation: fade-in ease-in 200ms;
-        background-color: rgb(85, 85, 85);
-        .nav003 {
-          display: block;
-          animation: fade-in ease-in-out 300ms;
-        }
-      }
-      .li-nav003:hover {
-        animation: fade-in ease-in 200ms;
-        background-color: rgb(85, 85, 85);
-        .nav004 {
-          display: block;
-          animation: fade-in ease-in-out 300ms;
-        }
-      }
-      .li-nav004:hover {
-        animation: fade-in ease-in 200ms;
-        background-color: rgb(85, 85, 85);
-        .nav005 {
-          display: block;
-          animation: fade-in ease-in 300ms;
-        }
-      }
-      .li-nav005:hover {
-        background-color: rgb(85, 85, 85);
-        animation: fade-in ease-in 200ms;
-        .nav006 {
-          display: block;
-          animation: fade-in ease-in-out 300ms;
-        }
-      }
-
+      animation: slide-in 500ms;
       .nav001 {
         display: none;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: absolute;
-        background-color: rgb(41, 38, 38);
-        width: 200px;
-        color: white;
-      }
-      .nav002 {
-        display: none;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: absolute;
-        background-color: rgb(41, 38, 38);
-        z-index: 0;
-        top: 0;
-        translate: 200px;
-        width: 200px;
-        height: 100%;
-        color: white;
-      }
-      .nav003 {
-        display: none;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: absolute;
-        background-color: rgb(41, 38, 38);
-        z-index: 0;
-        top: 0;
-        translate: 200px;
-        width: 200px;
-        height: 100%;
-        color: white;
-      }
-      .nav004 {
-        display: none;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: absolute;
-        background-color: rgb(41, 38, 38);
-        z-index: 0;
-        top: 0;
-        translate: 200px;
-        width: 200px;
-        height: 100%;
-        color: white;
-      }
-      .nav005 {
-        display: none;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: absolute;
-        background-color: rgb(41, 38, 38);
-        z-index: 0;
-        top: 0;
-        translate: 200px;
-        width: 200px;
-        height: 100%;
-        color: white;
       }
     }
   }
-  .main-nav.active {
-    display: block;
-    position: absolute;
-    background-color: $section_background_primary;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.33;
+  }
+  66% {
+    opacity: 0.66;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  0% {
+    translate: 100%;
+  }
+  100% {
+    translate: 0%;
   }
 }
 
 .burger-button-container {
+  z-index: 10;
   .burger-btn {
     width: 45px;
     height: 40px;
@@ -173,38 +92,183 @@ nav {
     }
     // Animations
     .burger-bar.active {
-      transform: translateX(-50px);
+      transform: translateX(0);
       background: transparent;
       box-shadow: none;
     }
     .burger-bar.active::before {
-      transform: rotate(45deg) translate(35px, -35px);
+      transform: rotate(-45deg);
       background-color: black;
-      .burger-bar.active::after {
-        transform: rotate(-45deg) translate(35px, 35px);
-        background-color: black;
-      }
+    }
+    .burger-bar.active::after {
+      transform: rotate(45deg);
+      background-color: black;
     }
   }
 }
 
 @media (min-width: 900px) {
-  .main-nav {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-
-    .main-category {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+  nav {
+    .main-nav {
+      margin-top: 2rem;
       display: flex;
-      gap: 2rem;
-      position: relative;
-      font-size: 20px;
+      justify-content: center;
+
+      .main-category {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        position: relative;
+        font-size: 20px;
+        .li-login {
+          display: none;
+        }
+      }
     }
   }
   .burger-btn {
     display: none;
+  }
+  .burger-button-container {
+    display: none;
+  }
+  nav {
+    .nav-wrapper {
+      margin-block: 24px;
+      margin-inline: 32px;
+    }
+    .main-nav {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      .main-category {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        position: relative;
+        font-size: 20px;
+
+        .li-main-category:hover {
+          cursor: pointer;
+          .nav001 {
+            display: block;
+            animation: fade-in ease-in-out 300ms;
+            cursor: pointer;
+          }
+        }
+
+        .li-nav001:hover {
+          animation: fade-in ease-in 200ms;
+          background-color: rgb(85, 85, 85);
+          .nav002 {
+            display: block;
+            animation: fade-in ease-in-out 300ms;
+          }
+        }
+        .li-nav002:hover {
+          animation: fade-in ease-in 200ms;
+          background-color: rgb(85, 85, 85);
+          .nav003 {
+            display: block;
+            animation: fade-in ease-in-out 300ms;
+          }
+        }
+        .li-nav003:hover {
+          animation: fade-in ease-in 200ms;
+          background-color: rgb(85, 85, 85);
+          .nav004 {
+            display: block;
+            animation: fade-in ease-in-out 300ms;
+          }
+        }
+        .li-nav004:hover {
+          animation: fade-in ease-in 200ms;
+          background-color: rgb(85, 85, 85);
+          .nav005 {
+            display: block;
+            animation: fade-in ease-in 300ms;
+          }
+        }
+        .li-nav005:hover {
+          background-color: rgb(85, 85, 85);
+          animation: fade-in ease-in 200ms;
+          .nav006 {
+            display: block;
+            animation: fade-in ease-in-out 300ms;
+          }
+        }
+
+        .nav001 {
+          display: none;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          position: absolute;
+          background-color: rgb(41, 38, 38);
+          width: 200px;
+          color: white;
+        }
+        .nav002 {
+          display: none;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          position: absolute;
+          background-color: rgb(41, 38, 38);
+          z-index: 0;
+          top: 0;
+          translate: 200px;
+          width: 200px;
+          height: 100%;
+          color: white;
+        }
+        .nav003 {
+          display: none;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          position: absolute;
+          background-color: rgb(41, 38, 38);
+          z-index: 0;
+          top: 0;
+          translate: 200px;
+          width: 200px;
+          height: 100%;
+          color: white;
+        }
+        .nav004 {
+          display: none;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          position: absolute;
+          background-color: rgb(41, 38, 38);
+          z-index: 0;
+          top: 0;
+          translate: 200px;
+          width: 200px;
+          height: 100%;
+          color: white;
+        }
+        .nav005 {
+          display: none;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          position: absolute;
+          background-color: rgb(41, 38, 38);
+          z-index: 0;
+          top: 0;
+          translate: 200px;
+          width: 200px;
+          height: 100%;
+          color: white;
+        }
+      }
+    }
   }
 }
