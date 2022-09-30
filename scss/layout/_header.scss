@@ -7,6 +7,9 @@ header {
       justify-content: space-between;
       align-items: center;
       gap: 2rem;
+      .img {
+        width: 40%;
+      }
     }
     .login {
       display: none;

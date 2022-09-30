@@ -1,14 +1,5 @@
 @use "../globals" as g;
 
-.hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
 .categories {
   .wrapper {
     margin-block: 24px;
@@ -270,5 +261,58 @@
         font-size: g.$vsmall-font;
       }
     }
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    display: none;
+  }
+  .news {
+    background-color: g.$section_background_primary;
+    .wrapper {
+      padding-block: 48px;
+      margin-block: 64px;
+      margin-inline: 32px;
+
+      header {
+        h3 {
+          font-size: g.$big-font;
+          text-transform: uppercase;
+          text-align: center;
+          color: g.$white;
+        }
+      }
+      .article-container {
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        gap: 0;
+        margin-top: 4rem;
+        overflow-x: auto;
+        article {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          color: rgb(177, 174, 174);
+          color: g.$white;
+          margin-inline: 8rem;
+          .date {
+            color: g.$paragraph_text_secondary;
+          }
+
+          h4 {
+            font-size: g.$small-font;
+          }
+        }
+      }
+    }
+  }
+}
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
