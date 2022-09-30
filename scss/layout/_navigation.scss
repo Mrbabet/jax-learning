@@ -30,6 +30,7 @@ nav {
       position: relative;
       font-size: 20px;
       animation: slide-in 500ms;
+
       .nav001 {
         display: none;
       }
@@ -122,6 +123,13 @@ nav {
         gap: 2rem;
         position: relative;
         font-size: 20px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        a:active {
+          color: red;
+        }
         .li-login {
           display: none;
         }
