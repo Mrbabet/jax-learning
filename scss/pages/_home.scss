@@ -278,7 +278,7 @@
 
       header {
         h3 {
-          font-size: g.$big-font;
+          font-size: g.$medium-font;
           text-transform: uppercase;
           text-align: center;
           color: g.$white;
@@ -333,10 +333,31 @@
       header {
         overflow-wrap: break-word;
         h3 {
-          font-size: g.$big-font;
+          font-size: g.$medium-font;
           font-weight: bold;
-          width: 500px;
+          width: 100%;
           text-align: center;
+        }
+      }
+    }
+  }
+  .layer4 {
+    background-color: g.$section_background_primary;
+    .wrapper {
+      margin-top: 64px;
+      margin-inline: 32px;
+      padding-block: 48px;
+      text-align: center;
+      header {
+        padding-block: 48px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4 {
+          font-size: g.$medium-font;
+          color: g.$white;
+          font-weight: 400;
         }
       }
     }
