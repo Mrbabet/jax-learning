@@ -1,5 +1,7 @@
 @use "../globals" as g;
-
+.hero {
+  display: block;
+}
 .categories {
   .wrapper {
     margin-block: 24px;
