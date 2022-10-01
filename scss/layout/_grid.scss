@@ -34,6 +34,12 @@
     text-transform: uppercase;
   }
 }
+.products-container {
+  display: grid;
+  place-content: center;
+  grid-template-columns: minmax(250px, 500px);
+  gap: 3rem;
+}
 @media (min-width: 900px) {
   .grid-container {
     display: grid;
@@ -51,6 +57,11 @@
       scale: 0.95;
     }
   }
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
 }
 @media (min-width: 1200px) {
   .grid-container {
@@ -63,5 +74,10 @@
     .grid-box-span-1 {
       grid-column: span 1;
     }
+  }
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
   }
 }

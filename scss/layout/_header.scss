@@ -7,8 +7,15 @@ header {
       justify-content: space-between;
       align-items: center;
       gap: 2rem;
+
       .img {
         width: 40%;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
       }
     }
     .login {
@@ -61,6 +68,13 @@ header {
         justify-content: space-between;
         flex-direction: row;
         gap: 0;
+        .flex {
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          // gap: 1rem;
+          display: none;
+        }
       }
       .login {
         display: flex;
