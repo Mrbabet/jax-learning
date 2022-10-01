@@ -46,6 +46,10 @@
     .grid-box-span-1 {
       grid-column: span 1;
     }
+    .grid-box:hover,
+    .grid-box-span-1:hover {
+      scale: 0.95;
+    }
   }
 }
 @media (min-width: 1200px) {

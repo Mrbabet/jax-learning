@@ -269,6 +269,125 @@
   .hero {
     display: none;
   }
+  .categories {
+    .wrapper {
+      margin-block: 24px;
+      margin-inline: 32px;
+    }
+    .grid-container {
+      .auto {
+        background-image: url(/images/mobile/Auto-mobile.webp);
+        background-color: g.$colormask;
+      }
+      .auto:hover {
+        background-color: g.$colormaskhover;
+        transition: 300ms;
+        cursor: pointer;
+      }
+      .dla-domu {
+        background-image: url(/images/mobile/dla-domu-mobile.webp);
+        background-color: g.$colormask;
+        background-position: center;
+      }
+      .dla-domu:hover {
+        background-color: g.$colormaskhover;
+        transition: 300ms;
+        cursor: pointer;
+      }
+      .horeca {
+        background-image: url(/images/mobile/horeca-mobile.webp);
+        background-color: g.$colormask;
+        background-position: center;
+      }
+      .horeca:hover {
+        background-color: g.$colormaskhover;
+        cursor: pointer;
+        transition: 300ms;
+      }
+      .przemysł-agro {
+        background-image: url(/images/mobile/przemys197130-agro-mobile.webp);
+        background-color: g.$colormask;
+        background-position: center;
+      }
+      .przemysł-agro:hover {
+        background-color: g.$colormaskhover;
+        transition: 300ms;
+        cursor: pointer;
+      }
+      .medycyna-laboratoria {
+        background-image: url(/images/mobile/lab-mobile.webp);
+        background-color: g.$colormask;
+        background-position: center;
+      }
+      .medycyna-laboratoria:hover {
+        background-color: g.$colormaskhover;
+        transition: 300ms;
+        cursor: pointer;
+      }
+      .placówki-edukacyjne {
+        background-image: url(/images/mobile/school-mobile.webp);
+        background-color: g.$colormask;
+        background-position: top;
+      }
+      .placówki-edukacyjne:hover {
+        background-color: g.$colormaskhover;
+        transition: 300ms;
+        cursor: pointer;
+      }
+      .placówki-sportowe {
+        background-image: url(/images/mobile/gym-mobile.webp);
+        background-color: g.$colormask;
+        background-position: center;
+      }
+      .placówki-sportowe:hover {
+        background-color: g.$colormaskhover;
+        transition: 300ms;
+        cursor: pointer;
+      }
+      .placówki-edukacyjne:hover {
+        background-color: g.$colormaskhover;
+        transition: 300ms;
+        cursor: pointer;
+      }
+      .firmy-sprzątające {
+        background-image: url(/images/mobile/cleaning-industry-mobile.webp);
+        background-color: g.$colormask;
+        background-position: center;
+      }
+      .firmy-sprzątające:hover {
+        background-color: g.$colormaskhover;
+        transition: 300ms;
+        cursor: pointer;
+      }
+      .nasze-marki {
+        background-image: url(/images/Nasze\ Marki.png);
+        background-color: g.$colormask;
+        background-size: cover;
+      }
+      .nasze-marki:hover {
+        background-color: g.$colormaskhover;
+        cursor: pointer;
+        transition: 300ms;
+      }
+      .sklep-internetowy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: g.$background-grid;
+        svg {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      .sklep-internetowy:hover {
+        transition: 300ms;
+        color: black;
+        background-color: g.$white;
+        cursor: pointer;
+      }
+    }
+  }
   .news {
     background-color: g.$section_background_primary;
     .wrapper {
