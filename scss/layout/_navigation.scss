@@ -18,6 +18,9 @@ nav {
     animation: show 300ms;
     height: 100vh;
     width: 80%;
+    @media (min-width: 900px) {
+      display: none;
+    }
 
     .main-category {
       margin-top: 200px;

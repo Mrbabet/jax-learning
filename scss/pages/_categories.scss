@@ -1,5 +1,8 @@
-.utility {
+.utility-mobile {
   background-color: rgb(41, 38, 38);
+  @media (min-width: 900px) {
+    display: none;
+  }
 
   .wrapper {
     display: flex;
@@ -112,6 +115,31 @@
 
   i {
     padding-right: 12px;
+  }
+}
+.sort-container {
+  display: none;
+}
+.sort-container.active {
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-color: rgb(41, 38, 38);
+  position: absolute;
+  left: 0;
+  right: 0;
+  ul {
+    margin-top: 3rem;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    li {
+      padding: 1rem;
+      border-bottom: 1px solid white;
+    }
+  }
+  @media (min-width: 900px) {
+    display: none;
   }
 }
 .options-filters {
@@ -229,4 +257,9 @@
     scale: 0.9;
     transition: 400ms;
   }
+}
+
+//Utility section desktop
+
+.utility-desktop {
 }
