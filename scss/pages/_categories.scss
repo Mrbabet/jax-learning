@@ -260,6 +260,49 @@
 }
 
 //Utility section desktop
+.category-top {
+  grid-area: Top;
+}
+.category-left {
+  grid-area: Left;
+  height: 100vh;
 
-.utility-desktop {
+  ul {
+    li {
+      padding: 3rem;
+    }
+  }
+}
+.products-container {
+  grid-area: center;
+}
+.category-top,
+.category-left {
+  width: 100%;
+  height: 200px;
+  display: block;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+.category-left {
+  height: 100%;
+}
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas:
+    "Top Top Top"
+    "Left center center"
+    "Left center center"
+    "Left center center";
+  @media (max-width: 900px) {
+    display: block;
+  }
+}
+.filter-header {
+  margin-block: 2rem;
+}
+.checkbox-container {
+  padding-block: 1rem;
 }
