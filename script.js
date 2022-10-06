@@ -31,24 +31,23 @@ sortBtn.addEventListener("click", () => {
   }
 });
 
-const rangeInput = document.querySelectorAll(".input-range-slider input"),
-  priceInput = document.querySelectorAll(".input-range-input input"),
-  progress = document.querySelector(".slider .progress");
-
-let priceGap = 1000;
+const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".price-input input"),
+  range = document.querySelector(".slider .progress");
+let priceGap = 0;
 
 priceInput.forEach((input) => {
   input.addEventListener("input", (e) => {
-    let minVal = parseInt(priceInput[0].value),
-      maxVal = parseInt(priceInput[1].value);
+    let minPrice = parseInt(priceInput[0].value),
+      maxPrice = parseInt(priceInput[1].value);
 
-    if (maxVal - minVal < priceGap) {
+    if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
       if (e.target.className === "input-min") {
-        rangeInput[0].value = minVal;
-        progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+        rangeInput[0].value = minPrice;
+        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
       } else {
-        rangeInput[1].value = maxVal;
-        progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+        rangeInput[1].value = maxPrice;
+        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
       }
     }
   });
@@ -66,10 +65,10 @@ rangeInput.forEach((input) => {
         rangeInput[1].value = minVal + priceGap;
       }
     } else {
-      rangeInput[0].value = minVal;
-      rangeInput[1].value = maxVal;
-      progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
-      progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
     }
   });
 });
