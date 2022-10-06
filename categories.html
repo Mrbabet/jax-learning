@@ -101,7 +101,6 @@
               <div class="view-bar">
                 <button class="view-type"><i class="fa-solid fa-grip"></i></button>
                 <button class="view-type"><i class="fa-solid fa-list"></i></button>
-                <button class="view-type"><i class="fa-solid fa-map"></i></button>
               </div>
             </div>
             <div class="sort">
@@ -157,23 +156,22 @@
                 </button>
               </div>
               <div class="price">
-                <div class="price-input">
-                  <div class="field">
-                    <span>Min</span>
-                    <input type="number" class="input-min" value="0">
-                  </div>
-                  <div class="separator">-</div>
-                  <div class="field">
-                    <span>Max</span>
-                    <input type="number" class="input-max" value="10000">
-                  </div>
-                </div>
+                <span>Cena (zł)</span>
                 <div class="slider">
                   <div class="progress"></div>
                 </div>
                 <div class="range-input">
                   <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
                   <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
+                </div>
+                <div class="price-input">
+                  <div class="field">
+                    <input type="number" class="input-min" value="0">
+                  </div>
+                  <div class="separator">-</div>
+                  <div class="field">
+                    <input type="number" class="input-max" value="10000">
+                  </div>
                 </div>
               </div>
               <div class="sort">
@@ -182,9 +180,12 @@
                     <option value="">Cena - od najniższej</option>
                     <option value="">Cena - od najwyższej</option>
                   </select>
-                <div class="list"></div>
               </div>
-              <div class="view-filters"></div>
+              <div class="view-filters">
+                <button class="view-type"><i class="fa-solid fa-grip"></i></button>
+                <button class="view-type"><i class="fa-solid fa-list"></i></button>
+                
+              </div>
             </div>
           <aside class="category-left">
             <form action="filters">
