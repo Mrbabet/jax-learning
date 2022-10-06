@@ -31,6 +31,24 @@ sortBtn.addEventListener("click", () => {
   }
 });
 
+var wrapper = document.getElementById("products-container");
+
+document.addEventListener("click", function (event) {
+  if (!event.target.matches(".list")) return;
+
+  // List view
+  event.preventDefault();
+  wrapper.classList.add("list");
+});
+
+document.addEventListener("click", function (event) {
+  if (!event.target.matches(".grid")) return;
+
+  // List view
+  event.preventDefault();
+  wrapper.classList.remove("list");
+});
+
 const rangeInput = document.querySelectorAll(".range-input input"),
   priceInput = document.querySelectorAll(".price-input input"),
   range = document.querySelector(".slider .progress");
@@ -71,22 +89,4 @@ rangeInput.forEach((input) => {
       range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
     }
   });
-});
-
-var wrapper = document.getElementById("products-container");
-
-document.addEventListener("click", function (event) {
-  if (!event.target.matches(".list")) return;
-
-  // List view
-  event.preventDefault();
-  wrapper.classList.add("list");
-});
-
-document.addEventListener("click", function (event) {
-  if (!event.target.matches(".grid")) return;
-
-  // List view
-  event.preventDefault();
-  wrapper.classList.remove("list");
 });
