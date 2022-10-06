@@ -39,6 +39,7 @@
   place-content: center;
   grid-template-columns: minmax(250px, 500px);
   gap: 3rem;
+  margin-block: 3rem;
 }
 @media (min-width: 900px) {
   .grid-container {
@@ -62,6 +63,17 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
+  .list {
+    width: 100%;
+    grid-template-columns: 1fr;
+    .product-box {
+      display: flex;
+      flex-direction: row;
+    }
+    img {
+      width: 20%;
+    }
+  }
 }
 @media (min-width: 1200px) {
   .grid-container {
@@ -79,5 +91,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
+  }
+  .list {
+    width: 100%;
+    grid-template-columns: 1fr;
+    .product-box {
+      display: flex;
+      flex-direction: row;
+    }
+    img {
+      width: 20%;
+    }
   }
 }

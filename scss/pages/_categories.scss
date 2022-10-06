@@ -208,6 +208,7 @@
     margin: 24px 32px;
   }
 }
+
 .product-box:hover {
   box-shadow: 0px 0px 30px -10px;
 }
@@ -399,6 +400,11 @@ input[type="range"]::-moz-range-thumb {
     i {
       font-size: 20px;
     }
+  }
+  .view-type:hover {
+    background-color: black;
+    color: white;
+    transition: 400ms;
   }
   .view-type:nth-of-type(1) {
     border-right: 1px solid black;
