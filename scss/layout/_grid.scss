@@ -41,6 +41,19 @@
   gap: 3rem;
   margin-block: 3rem;
 }
+.list {
+  width: 100%;
+  grid-template-columns: 1fr;
+  .product-box {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (max-width: 900px) {
+    img {
+      width: 120px;
+    }
+  }
+}
 @media (min-width: 900px) {
   .grid-container {
     display: grid;
@@ -72,7 +85,6 @@
       justify-content: center;
       .cart-icon {
         flex-shrink: 0;
-
         height: 50px;
         width: 25%;
         flex-wrap: wrap;
